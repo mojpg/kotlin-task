@@ -20,7 +20,6 @@ class OrderService {
             }
         }
         val discountedAppleCount = ceil((appleCount.toDouble()/2))
-        print(discountedAppleCount)
         val discountedOrangeCount = ceil(((orangeCount.toDouble()/3)*2))
         total = discountedAppleCount*applePrice + discountedOrangeCount*orangePrice
         return total

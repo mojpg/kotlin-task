@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OrderServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-02-07T00:09:27" hostname="Kaiyo.local" time="0.038">
-  <properties/>
-  <testcase name="Four apples and three oranges should be 1-70()" classname="OrderServiceTest" time="0.028"/>
-  <testcase name="Invalid items should throw an exception()" classname="OrderServiceTest" time="0.007"/>
-  <testcase name="Three apples and one orange should be 1-45()" classname="OrderServiceTest" time="0.001"/>
-  <system-out><![CDATA[2.02.0]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
