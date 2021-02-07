@@ -7,11 +7,19 @@ internal class OrderServiceTest {
     private val orderService = OrderService()
 
     @Test
-    fun `Three apples and one orange should be 2-05`() {
+    fun `Three apples and one orange should be 1-45`() {
         val testInput = listOf("Apple", "Apple", "Apple", "Orange")
-        val expectedOutput = 2.05
+        val expectedOutput = 1.45
         val actualOutput = orderService.calculateOrderPrice(testInput)
-        assertEquals(actualOutput, expectedOutput)
+        assertEquals(expectedOutput, actualOutput)
+    }
+
+    @Test
+    fun `Four apples and three oranges should be 1-70`() {
+        val testInput = listOf("Apple", "Apple", "Apple", "Apple", "Orange", "Orange", "Orange")
+        val expectedOutput = 1.70
+        val actualOutput = orderService.calculateOrderPrice(testInput)
+        assertEquals(expectedOutput, actualOutput)
     }
 
     @Test
