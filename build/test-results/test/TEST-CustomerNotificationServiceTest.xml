@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CustomerNotificationServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-07T00:35:47" hostname="Kaiyo.local" time="0.014">
+<testsuite name="CustomerNotificationServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-02-07T00:44:01" hostname="Kaiyo.local" time="0.014">
   <properties/>
-  <testcase name="announce events to the console()" classname="CustomerNotificationServiceTest" time="0.014"/>
+  <testcase name="announce events to the console()" classname="CustomerNotificationServiceTest" time="0.013"/>
+  <testcase name="announce a failed order()" classname="CustomerNotificationServiceTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

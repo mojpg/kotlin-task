@@ -10,7 +10,7 @@ internal class OrderServiceTest {
     fun `Three apples and one orange should be 1-45`() {
         val testInput = listOf("Apple", "Apple", "Apple", "Orange")
         val expectedOutput = 1.45
-        val actualOutput = orderService.calculateOrderPrice(testInput)
+        val actualOutput = orderService.calculateOrderPrice(testInput, 3, 1)
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -18,7 +18,7 @@ internal class OrderServiceTest {
     fun `Four apples and three oranges should be 1-70`() {
         val testInput = listOf("Apple", "Apple", "Apple", "Apple", "Orange", "Orange", "Orange")
         val expectedOutput = 1.70
-        val actualOutput = orderService.calculateOrderPrice(testInput)
+        val actualOutput = orderService.calculateOrderPrice(testInput, 4, 3)
         assertEquals(expectedOutput, actualOutput)
     }
 
@@ -26,7 +26,7 @@ internal class OrderServiceTest {
     fun `Invalid items should throw an exception`() {
         val testInput = listOf("Banana")
         val exception = assertThrows<Exception>("Unexpected value!") {
-            orderService.calculateOrderPrice(testInput)
+            orderService.calculateOrderPrice(testInput, 1, 1)
         }
         val expectedMessage = "Unexpected value!"
         val actualMessage = exception.message

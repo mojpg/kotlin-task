@@ -27,4 +27,10 @@ internal class CustomerNotificationServiceTest {
         customerNotificationService.announceEvent(2.05)
         assertEquals("Received order of value $2.05, estimated delivery in a week.", testOutputStream.toString())
     }
+
+    @Test
+    fun `announce a failed order`() {
+        customerNotificationService.announceEvent(null)
+        assertEquals("Your order failed due to limited stock. Please try again.", testOutputStream.toString())
+    }
 }
