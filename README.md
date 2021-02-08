@@ -1,1 +1,1 @@
-# amex-kotlin-task
+# kotlin-task
